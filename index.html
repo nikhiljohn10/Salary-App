@@ -89,9 +89,9 @@
         </div>
       </header>
       <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-        <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-        <a class="mdl-navigation__link" href="#employee"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Employees</a>
-        <a class="mdl-navigation__link" href="#salary"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">attach_money</i>Salary</a>
+        <a class="mdl-navigation__link" href="#" ng-link="home()"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+        <a class="mdl-navigation__link" href="#employee" ng-link="employee({id:5})"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Employees</a>
+        <a class="mdl-navigation__link" href="#salary" ng-link="salary()"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">attach_money</i>Salary</a>
         <a class="mdl-navigation__link" href="#account"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_balance_wallet</i>Account</a>
         <a class="mdl-navigation__link" href="#settings"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">settings</i>Settings</a>
 
@@ -237,6 +237,7 @@
   </svg>
   <!--script src="js/jquery.min.js"></script-->
   <script src="js/angular.min.js"></script>
+  <script src="js/router.es5.js"></script>
   <script src="js/material.min.js"></script>
   <script src="js/script.js"></script>
 </body>
