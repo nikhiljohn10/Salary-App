@@ -1,5 +1,9 @@
 <div class="mdl-grid demo-content">
-    <h1>{{message}}</h1>
-    <p>detail {{detial.id}}</p>
+    <div class="mdl-cell mdl-cell--6-col">
+    	<div ui-view="columnOne"></div>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col">
+    	<div ui-view="columnTwo"></div>
+    </div>
 </div>
-<script src="../js/employee.js"></script>
+  <script src="js/material.min.js"></script>
