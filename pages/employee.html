@@ -1,9 +1,82 @@
 <div class="mdl-grid demo-content">
-    <div class="mdl-cell mdl-cell--6-col">
-    	<div ui-view="columnOne"></div>
+  <div class="mdl-cell mdl-cell--3-col">
+    <div ui-view="columnOne">
+      <div class="demo-card-event mdl-card emp-side mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h4>
+            Featured event:<br>
+            May 24, 2016<br>
+            7-11pm
+          </h4>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Add to Calendar
+          </a>
+          <div class="mdl-layout-spacer"></div>
+          <i class="material-icons">event</i>
+        </div>
+      </div>
     </div>
-    <div class="mdl-cell mdl-cell--6-col">
-    	<div ui-view="columnTwo"></div>
+  </div>
+  <div class="mdl-cell mdl-cell--9-col">
+    <div ui-view="columnTwo">
+      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs__tab-bar emp-tab">
+          <a href="#staff-panel" class="mdl-tabs__tab is-active">Staff</a>
+          <a href="#bengali-panel" class="mdl-tabs__tab">Bengali</a>
+          <a href="#worker-panel" class="mdl-tabs__tab">Others</a>
+        </div>
+        <br>
+        <div class="mdl-tabs__panel is-active" id="staff-panel">
+          <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+                <th class="mdl-data-table__header--sorted-ascending">Salary</th>
+                <th>Advance</th>
+                <th>Balance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Wilson</td>
+                <td>20000</td>
+                <td>6540</td>
+                <td>6540</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Davis</td>
+                <td>15000</td>
+                <td>6540</td>
+                <td>2342</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Romy</td>
+                <td>16000</td>
+                <td>6540</td>
+                <td>4325</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="mdl-tabs__panel" id="bengali-panel">
+          <ul>
+            <li>Tywin</li>
+            <li>Cersei</li>
+            <li>Jamie</li>
+            <li>Tyrion</li>
+          </ul>
+        </div>
+        <div class="mdl-tabs__panel" id="worker-panel">
+          <ul>
+            <li>Viserys</li>
+            <li>Daenerys</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-  <script src="js/material.min.js"></script>
+<script src="js/material.min.js"></script>

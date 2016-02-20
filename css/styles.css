@@ -227,3 +227,10 @@ _:-ms-input-placeholder, :root .demo-graph {
   -ms-flex-align: center;
   align-items: center;
 }
+.emp-tab{
+  justify-content: flex-start;
+}
+.emp-side{
+  min-height: 400px;
+  width: auto;
+}
