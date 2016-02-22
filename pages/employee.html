@@ -2,19 +2,64 @@
   <div class="mdl-cell mdl-cell--3-col">
     <div ui-view="columnOne">
       <div class="demo-card-event mdl-card emp-side mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand">
-          <h4>
-            Featured event:<br>
-            May 24, 2016<br>
-            7-11pm
-          </h4>
+        <div class="mdl-card--expand">
+          <ul class='mdl-list'>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  Management
+              </span>
+              <span class="mdl-list__item-secondary-action">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked />
+                </label>
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  Accounts
+              </span>
+              <span class="mdl-list__item-secondary-action">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                  <input type="checkbox" id="switch-2" class="mdl-switch__input" checked />
+                </label>
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  Billing
+              </span>
+              <span class="mdl-list__item-secondary-action">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+                  <input type="checkbox" id="switch-3" class="mdl-switch__input" checked />
+                </label>
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  Order
+              </span>
+              <span class="mdl-list__item-secondary-action">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+                  <input type="checkbox" id="switch-3" class="mdl-switch__input" checked />
+                </label>
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content salary-filter-align">
+                  Salary
+              </span>
+              <span class="mdl-list__item-secondary-action">
+                <p>
+                  <input class="mdl-slider mdl-js-slider" type="range" id="s1" min="0" max="10" value="4" step="2">
+                </p>
+              </span>
+            </li>
+          </ul>
         </div>
-        <div class="mdl-card__actions mdl-card--border">
+        <div class="mdl-card__actions mdl-card--border mdl-typography--text-center">
           <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-            Add to Calendar
+            Filter
           </a>
-          <div class="mdl-layout-spacer"></div>
-          <i class="material-icons">event</i>
         </div>
       </div>
     </div>
@@ -56,6 +101,12 @@
                 <td>16000</td>
                 <td>6540</td>
                 <td>4325</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Ishrath</td>
+                <td>12000</td>
+                <td>1040</td>
+                <td>2325</td>
               </tr>
             </tbody>
           </table>
